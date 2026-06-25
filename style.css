@@ -14,9 +14,11 @@ body{
     margin: 0 auto;
     align-items: center;
     background-color: #fccff2;
+    margin-bottom: 30px;
     padding: 20px;
     border-radius: 10px;
 }
+
 input{
     background-color: #7c55ae;
     border-radius: 10px;
@@ -68,7 +70,7 @@ input:focus{
     border: 3px solid #00120b;
 }  
 
-#message{
+#message, #userList{
     white-space: pre-wrap;
 }
 
