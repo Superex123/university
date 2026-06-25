@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semester project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1>Registration Form</h1>
+            <p>Fill the form to register</p>
+        </div>
+        <form id="registrationForm">
+            <label for="Fullname">Enter your full Name:</label>
+            <input type="text" id="Fullname" placeholder="Input your Name" required>
+
+            <label for="Email">Enter your email:</label>
+            <input type="email" id="Email" placeholder="Input your Email" required>
+
+            <label for="Age">Enter your Age:</label>
+            <input type="number" id="Age" placeholder="Input your Age" required>
+
+            <div class="fieldOfStudy">
+                <div class="item">
+                    <label for="html">Computer Science</label>
+                    <input type="radio" id="html" name="field_of_study" value="Computer Science" required>
+                </div>
+                
+                <div class="item">
+                    <label for="css">Web Design</label>
+                    <input type="radio" id="css" name="field_of_study" value="Web Design">
+                </div>
+                <div class="item">
+                    <label for="javascript">Programming</label>
+                    <input type="radio" id="javascript" name="field_of_study" value="Programming">
+                </div>
+            </div>
+            
+            <div class="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+                <input type="checkbox" id="terms" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
