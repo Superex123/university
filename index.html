@@ -14,39 +14,41 @@
         </div>
         <form id="registrationForm">
             <label for="Fullname">Enter your full Name:</label>
-            <input type="text" id="Fullname" placeholder="Input your Name" required>
+            <input type="text" id="Fullname" placeholder="Input your Name">
 
             <label for="Email">Enter your email:</label>
-            <input type="email" id="Email" placeholder="Input your Email" required>
+            <input type="text" id="Email" placeholder="Input your Email">
 
             <label for="Age">Enter your Age:</label>
-            <input type="number" id="Age" placeholder="Input your Age" required>
+            <input type="number" id="Age" placeholder="Input your Age">
 
             <div class="fieldOfStudy">
-                <div class="item">
-                    <label for="html">Computer Science</label>
-                    <input type="radio" id="html" name="field_of_study" value="Computer Science" required>
-                </div>
-                
-                <div class="item">
-                    <label for="css">Web Design</label>
-                    <input type="radio" id="css" name="field_of_study" value="Web Design">
-                </div>
-                <div class="item">
-                    <label for="javascript">Programming</label>
-                    <input type="radio" id="javascript" name="field_of_study" value="Programming">
-                </div>
+                <label for="field_of_study">Choose a field:</label>
+                <select id="field_of_study" name="field_of_study">
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Game Development">Game Design</option>
+                    <option value="Marketing">Programming</option>
+                </select>
             </div>
             
             <div class="terms">
                 <label for="terms">I agree to the terms and conditions</label>
-                <input type="checkbox" id="terms" required>
+                <input type="checkbox" id="terms">
             </div>
 
             <button type="submit">Register</button>
         </form>
 
-        <div class="message" id="message"></div>
+        <div class="message" >
+            <label id="message"></label>
+        </div>
+    
+    </div>
+    <div class="container">
+        <div list="list">
+            <h2>Registered Users</h2>
+            <ul id="userList"></ul>
+        </div>
     </div>
 
     <script src="script.js"></script>
